@@ -2,12 +2,12 @@
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: "deny-all-{{AGENT_ID}}"
-  namespace: "agents-{{TEAM_NAME}}"
+  name: "deny-all-testtttooo"
+  namespace: "agents-testooo"
 spec:
   podSelector:
     matchLabels:
-      app: "{{AGENT_ID}}"
+      app: "testtttooo"
   policyTypes:
     - Ingress
     - Egress
@@ -16,12 +16,12 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: "allow-platform-{{AGENT_ID}}"
-  namespace: "agents-{{TEAM_NAME}}"
+  name: "allow-platform-testtttooo"
+  namespace: "agents-testooo"
 spec:
   podSelector:
     matchLabels:
-      app: "{{AGENT_ID}}"
+      app: "testtttooo"
   policyTypes:
     - Ingress
     - Egress
